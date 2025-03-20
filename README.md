@@ -1,7 +1,7 @@
 # wordle-algorithm
 A repository to implement algorithms with test strategies
 
-# What I need to do
+# What I need to do ALGORITHM A
 A function that recieves two words.
  + One that is the guessed word of the user
  + One that is the correct secret word
@@ -36,6 +36,31 @@ secret word vs guessed word:
 - All letters are correct
 - Combination of incorrect, correct & misplaced
 - Repeating letters  
+
+
+
+# What I need to do ALGORITHM B- A function for Wordle to provide user with a word to play with
+Inputs needed: 
+- An array of words
+- A number that defines required length of string
+- Indication/flag for repeating letters, or only individual, unique letters
+
+# Functionality: 
+- Choose a random word from the array, filter words with required length
+- Throw error if no word matches required criteria
+- Choose a random word from the filtered options
+
+Outputs needed: 
+- The chosen random word    
+
+
+# Possible testscenarios:
+- When repeated letters are allowed and words of the correct length exist, 
+the function should return a word with the desired length.
+- When repeated letters are not allowed, only words with unique letters should be considered.
+- If no word of the desired length exists, an error should be thrown.
+- If no word with all unique letters exists, an error should be thrown.
+
 
 
 sources:
