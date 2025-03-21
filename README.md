@@ -19,12 +19,12 @@ secret word vs guessed word:
  A          -  G  = incorrect
  
 
-# Step 1: Loop through both words and find the matching letters, save the result as an object in an array 
+# Loop through both words and find the matching letters, save the result as an object in an array 
  { letter: 'R', result: 'correct' }
 
-# Step 2: Map remaining letters to know which ones are available to be either incorrect or misplaced.
+# Map remaining letters to know which ones are available to be either incorrect or misplaced.
 
-# Step 3: Loop through the guessed word again
+# Loop through the guessed word again
     For every letter that is not marked "correct"
         - If letter belongs to the remaining ones and sum > 0 mark them as "misplaced" and decrease total letters   with 1
         - If NOT mark as "incorrect"
