@@ -1,14 +1,58 @@
 {
   "name": "wordle-algorithm",
+  "version": "1.0.0",
+  "description": "Algorithm for solving Wordle-like puzzles",
   "type": "module",
+  "private": true,
+  "keywords": [
+    "wordle",
+    "algorithm",
+    "puzzle",
+    "solver"
+  ],
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "start": "cross-env NODE_ENV=development node index.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
 
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "no-unused-vars": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "jest": "^29.7.0"
-  },
-  "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "cross-env NODE_ENV=development node index.js",
-    "build": "cross-env NODE_ENV=production webpack"
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.4",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3"
   }
 }

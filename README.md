@@ -65,3 +65,30 @@ the function should return a word with the desired length.
 
 sources:
 https://mitsloan.mit.edu/ideas-made-to-matter/how-algorithm-solves-wordle
+
+## Package Json notes
+- changed this: "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+to this: "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+- webpack for future bundling, makes code more effective and robust
+
+# ESLint configuration 
+- configured ESLint to work with react so I can make more advanced UI:s later on- These combined makes it
+possible to write code that works and is easy to debug, read and scale. I added this config straight in the json package but for future separation I will use an own config file for it. 
+
+Explanations for a wider understanding of it all: 
+"browser": true = Code runs in browser, global variables like document is overseen by ESLint
+"es2021": true = Modern JS, ECMA script 2021 functions are accepted
+"eslint:recommended" = Recommended set of rules by ESLint
+"plugin:react/recommended" = Includes rules from react plugin, helps to follow best practice when making react components.
+"react": { "version": "detect" } = Instead of manually updating config
+JSX = is used to build components in react- Combines markup and logic (js and html) 
+
+## Metadata = Keywords, wordle, algorithm, puzzle, solver
+These words are an array of words describing this project to make it easier for search engines to find it when published/distributed. I could for example make my own package and share with my community, so that they can npm install my-package-name
+
+# COMMANDS:
+npm run lint = Scan the code for problems and get an overview, problem solution in an early stage
+eslint --fix = To fix problems automatically (sometimes)
+npm run format = formatting with prettier
+npm publish = If I want to publish this in the NPM register
+
