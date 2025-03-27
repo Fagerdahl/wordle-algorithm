@@ -1,7 +1,7 @@
 {
-  "name": "wordle-algorithm",
+  "name": "wordle-game",
   "version": "1.0.0",
-  "description": "Algorithm for solving Wordle-like puzzles",
+  "description": "My version of the wordle game",
   "type": "module",
   "private": true,
   "keywords": [
@@ -13,7 +13,6 @@
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "start": "cross-env NODE_ENV=development node index.js",
-    "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
