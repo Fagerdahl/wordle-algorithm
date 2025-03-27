@@ -1,0 +1,1 @@
+//Own component for every single letter with color [x]

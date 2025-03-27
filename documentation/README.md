@@ -47,4 +47,10 @@ UI Design: Figma https://www.figma.com/design/aKxmfxzUziLLlGa4TJb2Bi/Ronjas-Word
 
 Algorithms: algorithmA & algorithmB : AlgorithmA handles letter feedback (correct/misplaced/incorrect), and algorithmB selects a random word based on user-defined settings.
 
+# client/src/index.js 
+This is the React entry point.
+It mounts <App /> into the DOM, and runs in the browser
 
+# server/index.js
+This is the Node.js backend entry point
+Sets up the Express server and API endpoints, and runs in Node environment (server)

@@ -46,3 +46,5 @@ PS C:\Repos Ronjas\wordle-algorithm>
 
   Local:            http://localhost:3000
   On Your Network:  http://192.168.8.103:3000](image.png)
+
+  Notice that we have removed the imports we do not need (logo.svg and App.css).

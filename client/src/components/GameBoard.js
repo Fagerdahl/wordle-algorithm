@@ -1,0 +1,1 @@
+//Shows all tiles ans rows in the game
